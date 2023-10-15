@@ -899,12 +899,15 @@ if __name__ == '__main__':
     moon_stage = config['OBSERVATION']['moon_stage']
     if moon_stage == 'full':
         sky_filename = 'data/skycalc_radiance_full_moon.dat'
+        raise Exception("The file needed is too big to fit on GitHub. Try moon_stage = 'none' instead.")
         sky_component_filename = 'data/skycalc_radiance_components_full_moon.dat'
     elif moon_stage == 'new':
         sky_filename = 'data/skycalc_radiance_new_moon.dat'
+        raise Exception("The file needed is too big to fit on GitHub. Try moon_stage = 'none' instead.")
         sky_component_filename = 'data/skycalc_radiance_components_new_moon.dat'
     elif moon_stage == 'half':
         sky_filename = 'data/skycalc_radiance_half_moon.dat'
+        raise Exception("The file needed is too big to fit on GitHub. Try moon_stage = 'none' instead.")
         sky_component_filename = 'data/skycalc_radiance_components_half_moon.dat'
     elif moon_stage == 'none':
         sky_filename = 'data/skycalc_radiance_no_moon.dat'
